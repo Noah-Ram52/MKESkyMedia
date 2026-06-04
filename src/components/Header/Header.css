@@ -1,5 +1,3 @@
-/* Header.css */
-
 .header {
   display: flex;
   flex-direction: row;
@@ -27,6 +25,7 @@
   list-style-type: none;
   gap: 20px;
   margin: 0 auto 0 auto;
-  padding: 0;
+
+  padding-right: 200px;
 }
 

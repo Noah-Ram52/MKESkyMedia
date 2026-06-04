@@ -1,0 +1,52 @@
+.main {
+  position: relative;
+  min-height: calc(100vh - 90px);
+  overflow: hidden;
+}
+
+.main__container {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.main__image {
+  display: block;
+  width: 100%;
+  height: calc(100vh - 90px);
+  object-fit: cover;
+}
+
+.main__image-overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(255, 255, 255, 0.15);
+  z-index: 1;
+}
+
+.main__title {
+  position: absolute;
+  left: 0;
+  width: 100%;
+  padding: 18px 0;
+  background: rgba(255, 255, 255, 0.6);
+  text-align: center;
+  z-index: 2;
+}
+
+.main__title--top {
+  top: 0;
+}
+
+.main__title--bottom {
+  bottom: 0;
+  height: 45px;
+}
+
+.main__title h1 {
+  margin: 0;
+  font-size: clamp(2rem, 4vw, 3rem);
+  font-weight: 800;
+  color: #111;
+  letter-spacing: 1px;
+}
