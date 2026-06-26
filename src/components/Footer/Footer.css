@@ -1,0 +1,30 @@
+.footer {
+    background: #4c4b4b;
+}
+
+.footer__separation {
+    background: #fff;
+    height: 2px;
+    width: 100%;
+    margin-bottom: 0.5rem;
+}
+.footer__vertical-line {
+    width: 2.5px;
+    height: 40px;
+    background-color: rgb(153, 140, 25);
+    margin-bottom: 0.5rem;
+}
+
+.footer__text {
+    font-family: 'Open Sans', sans-serif;
+    color: rgb(170, 166, 166);
+    font-size: 14px;
+}
+
+.footer__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+}

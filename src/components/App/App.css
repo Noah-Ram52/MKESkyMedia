@@ -1,5 +1,31 @@
 .page {
-    display: flex;
-    min-height: 100vh;
-    flex-direction: column;
+  background: #4c4b4b;
+  min-height: 100vh;
+  overflow: hidden;
+}
+
+.page-content {
+  position: relative;
+  min-height: calc(100vh - 90px);
+  background: transparent;
+  animation: slideUp 0.45s ease both;
+}
+
+.page__preloader-overlay {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 999;
+}
+
+@keyframes slideUp {
+  from {
+    transform: translateY(60px);
+  }
+  to {
+    transform: translateY(0);
+  }
 }
