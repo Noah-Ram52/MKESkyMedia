@@ -2,7 +2,6 @@ import "./About.css"
 
 import holdCamera from "../../assets/pointing_camera.jpg"
 import standing from "../../assets/standingMan.jpg"
-import MKESkyMediaLogo from "../../assets/MKE SKYMEDIA no text.png"
 import MKESkyMediaTextOnly from "../../assets/MKE SKYMEDIA _text_only.png"
 
 function About() {

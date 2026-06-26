@@ -23,7 +23,6 @@ function App() {
           <Route path="/" element={<Main />} />
           <Route path="/about" element={<About />} />
           <Route path="/contact" element={<Contact />} />
-          
         </Routes>
       </div>
       {location.pathname === '/contact' && <Map />}

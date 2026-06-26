@@ -8,9 +8,6 @@ function Map() {
   const { lat, lon, name } = MAP_LOCATION;
   const [mapType, setMapType] = useState('map');
 
-  const [terrain, setTerrain] = useState(true);
-  const [labels, setLabels] = useState(true);
-
   return (
     <section className="map">
       <div className="map__toggle">
@@ -27,7 +24,6 @@ function Map() {
       Satellite
     </button>
   </div>
-
       <MapContainer
         center={[lat, lon]}
         zoom={16}
@@ -42,7 +38,6 @@ function Map() {
               : 'https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png'
           }
         />
-
         <Marker position={[lat, lon]}>
           <Popup>{name}</Popup>
         </Marker>
