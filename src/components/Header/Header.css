@@ -92,3 +92,27 @@
     margin: 0 0 0 70px;
   }
 }
+
+@media screen and (max-width: 600px) {
+  .header__burger {
+    min-height: 75px;
+    font-size: 30px;
+  }
+
+  .header__logo--mobile {
+    width: 105px;
+  }
+
+  .header__mobile-menu {
+    padding: -1px 0 16px;
+  }
+
+  .header__routes--mobile {
+    gap: 10px;
+    margin: 0 0 0 40px;
+  }
+
+  .header__routes--mobile .header__routes_page-item-button {
+    font-size: 14px;
+  }
+}
