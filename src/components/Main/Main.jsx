@@ -16,7 +16,7 @@ function Main() {
         </div>
       </div>
       <div className='main__video-wrap'>
-        <video className='main__video-size' controls width="100%">
+        <video className='main__video-size' controls width="100%" playsInline preload="metadata">
           <source 
           className="main__video-source" 
           src={mkeSkyMediaVideo} 
