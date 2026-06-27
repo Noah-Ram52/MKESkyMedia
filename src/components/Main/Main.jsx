@@ -1,6 +1,6 @@
 import './Main.css'
 import city from '../../assets/home_image.jpg'
-import mkeSkyMediaVideo from '../../assets/MKE_-_Reel.mp4'
+import mkeSkyMediaVideo from '../../assets/mke_small.mp4'
 
 function Main() {
   return (
