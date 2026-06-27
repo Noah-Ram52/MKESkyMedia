@@ -105,5 +105,55 @@
   object-fit: cover;
 }
 
+@media screen and (max-width: 900px) {
+  .contact__container_main {
+    flex-direction: column;
+    padding: 3rem 2rem 4rem;
+    gap: 2rem;
+    background-image: linear-gradient(to bottom, #fff, #4c4b4b);
+  }
+
+  .contact__social {
+    margin-left: 0;
+    width: 100%;
+  }
+
+  .contacts__social_image_wrap {
+    min-height: auto;
+    padding: 1rem 0;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .contact__container_main {
+    padding: 2rem 1rem 3rem;
+  }
+
+  .contact__social {
+    width: 100%;
+    margin-top: 2rem;
+  }
+
+  .contact__social_links {
+    font-size: 18px;
+  }
+
+  .contacts__social_email,
+  .contacts__social_number_position {
+    font-size: 18px;
+  }
+
+  .contact__social_links_image {
+    width: 20px;
+    height: 20px;
+  }
+
+  .contacts__social_number_email {
+    flex-direction: row;
+    align-items: center;
+    gap: 0.5rem;
+  }
+}
+
 
 

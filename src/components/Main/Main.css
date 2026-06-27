@@ -82,3 +82,36 @@
   border-radius: 12px;
 }
 
+@media screen and (max-width: 900px) {
+  .main {
+    min-height: auto;
+  }
+
+  .main__image {
+    height: 60vh;
+  }
+
+  .main__title {
+    padding: 12px 0;
+  }
+
+  .main__video-wrap {
+    padding: 32px 16px 48px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .main__image {
+    height: 50vh;
+  }
+
+  .main__title-text {
+    font-size: clamp(1.75rem, 7vw, 2.5rem);
+  }
+
+  .main__video-wrap {
+    padding: 24px 12px 32px;
+  }
+}
+
+

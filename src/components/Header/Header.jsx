@@ -1,36 +1,66 @@
-// #CSS
 import './Header.css'
-
 import { Link } from 'react-router-dom'
-
-// #Images
 import logo from '../../assets/MKE SKYMEDIA log back with text.png'
+import MKE_SkyMedia_Text from "../../assets/MKE SKYMEDIA _text_only.png"
 
-function Header() {
+function Header({ hiddenHeader, toggleHeader }) {
   return (
     <header className="header">
-      <div className="header__container">
+      <div className="header__desktop">
         <img className="header__logo" src={logo} alt="MKE SKYMEDIA Logo" />
-          <ul className='header__routes'>
-            <li className='header__routes_page-item'>
-              <Link to="/">
-                <button className='header__routes_page-item-button'>Home</button>
+        <ul className="header__routes">
+          <li className="header__routes_page-item">
+            <Link to="/">
+              <button className="header__routes_page-item-button">Home</button>
+            </Link>
+          </li>
+          <li className="header__routes_page-item">
+            <Link to="/about">
+              <button className="header__routes_page-item-button">About</button>
+            </Link>
+          </li>
+          <li className="header__routes_page-item">
+            <Link to="/contact">
+              <button className="header__routes_page-item-button">Contact</button>
+            </Link>
+          </li>
+        </ul>
+      </div>
+
+      <button
+        className="header__burger"
+        onClick={toggleHeader}
+        aria-label="Toggle navigation menu"
+        aria-expanded={!hiddenHeader}
+      >
+        ☰
+        
+      </button>
+
+      {!hiddenHeader && (
+        <div className="header__mobile-menu">
+          <img className="header__logo header__logo--mobile" src={logo} alt="MKE SKYMEDIA Logo" />
+          <ul className="header__routes header__routes--mobile">
+            <li className="header__routes_page-item">
+              <Link to="/" onClick={toggleHeader}>
+                <button className="header__routes_page-item-button">Home</button>
               </Link>
             </li>
-            <li className='header__routes_page-item'>
-              <Link to="/about">
-                <button className='header__routes_page-item-button'>About</button>
+            <li className="header__routes_page-item">
+              <Link to="/about" onClick={toggleHeader}>
+                <button className="header__routes_page-item-button">About</button>
               </Link>
             </li>
-            <li className='header__routes_page-item'>
-              <Link to="/contact">
-                <button className='header__routes_page-item-button'>Contact</button>
+            <li className="header__routes_page-item">
+              <Link to="/contact" onClick={toggleHeader}>
+                <button className="header__routes_page-item-button">Contact</button>
               </Link>
             </li>
           </ul>
-      </div>
+        </div>
+      )}
     </header>
   )
 }
 
-export default Header;
+export default Header

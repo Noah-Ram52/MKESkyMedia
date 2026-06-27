@@ -1,7 +1,7 @@
 .page {
   background: #4c4b4b;
   min-height: 100vh;
-  overflow: hidden;
+  overflow-x: hidden;
 }
 
 .page-content {
@@ -27,5 +27,17 @@
   }
   to {
     transform: translateY(0);
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .page-content {
+    min-height: auto;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .page-content {
+    min-height: auto;
   }
 }
