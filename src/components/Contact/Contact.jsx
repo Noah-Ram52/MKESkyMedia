@@ -45,13 +45,15 @@ function Contact() {
                 MKE Skymedia
             </ExternalLinks>
             <div className='contacts__social_number_email'>
-              <img className="contact__social_links_image" src={phone_image} alt="Phone Icon" />
-                <div className='contacts__social_number_position'>(414) 439-3570</div>      
-            </div>
-            <div className='contacts__social_number_email'>
               <img className="contact__social_links_image" src={email_image} alt="Email Icon" />
               <div className='contacts__social_email'>jramos414@hotmail.com</div>
             </div>
+            <div className='contacts__social_number_email'>
+              <img className="contact__social_links_image" src={phone_image} alt="Phone Icon" />
+                <div className='contacts__social_number_position 
+                contacts__social_number_position-query'>(414) 439-3570</div>      
+            </div>
+            
         </div>
         <div className="contacts__social_image_wrap">
   <img

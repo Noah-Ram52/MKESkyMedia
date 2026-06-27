@@ -74,7 +74,12 @@
   position: relative;
   left: 8px;
   bottom: 4px;
-  
+}
+
+.contacts__social_number_position-query {
+  font-size: 18px;
+    position: relative;
+    bottom: -2px;
 }
 
 .contacts__social_image_wrap {
