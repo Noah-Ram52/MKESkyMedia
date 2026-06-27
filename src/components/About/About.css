@@ -81,13 +81,23 @@
 }
 
 @media screen and (max-width: 900px) {
-  .about__empty-space-title {
-
-    max-width: 555px;
+  .about__empty-space {
+    position: relative;
   }
+
+
 
   .about__container {
     flex-direction: column;
+  }
+
+  .about__empty-space-title {
+    position: relative;
+    display: flex;
+    width: 100%;
+    background-image: url('/src/assets/MKE SKYMEDIA _text_only.png');
+    position: relative;
+    bottom: 65px;
   }
 
   .about__text {
