@@ -74,16 +74,11 @@
   background: transparent;
 }
 
-.main__video-size {
-  width: min(100%, 1800px);
-  height: auto;
+.main__video-embed {
+  width: min(100%, 1900px);
+  aspect-ratio: 16 / 9;
   display: block;
+  border: 0;
   border-radius: 12px;
 }
 
-.main__video {
-  width: min(100%, 900px);
-  height: auto;
-  display: block;
-  border-radius: 12px;
-}

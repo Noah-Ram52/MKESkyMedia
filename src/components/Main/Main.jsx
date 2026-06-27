@@ -15,13 +15,15 @@ function Main() {
           <div className="main__bottom-line"></div>
         </div>
       </div>
-      <div className='main__video-wrap'>
-        <video className='main__video-size' controls width="100%" playsInline preload="metadata">
-          <source 
-          className="main__video-source" 
-          src={mkeSkyMediaVideo} 
-          type="video/mp4" />
-        </video>
+      <div className="main__video-wrap">
+        <iframe
+          className="main__video-embed"
+          src="https://www.youtube.com/embed/7LlyxgAeXSE"
+          title="YouTube video player"
+          frameBorder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowFullScreen
+        />
       </div>
     </main>
   )
