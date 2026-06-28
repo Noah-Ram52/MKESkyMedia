@@ -132,6 +132,7 @@
 
   .header__logo--mobile {
     width: 95px;
+    margin-left: -40px;
   }
 
   .header__mobile {
