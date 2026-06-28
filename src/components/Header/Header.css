@@ -47,6 +47,15 @@
 
 /* Mobile / tablet */
 @media screen and (max-width: 900px) {
+  .header {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 12px;
+    padding: 0 16px;
+    min-height: 60px;
+  }
+
   .header__desktop {
     display: none;
   }
@@ -54,10 +63,10 @@
   .header__burger {
     display: flex;
     align-items: center;
-    justify-content: flex-start;
-    width: 100%;
+    justify-content: center;
+    width: auto;
     min-height: 60px;
-    padding: 0 16px;
+    padding: 0 12px;
     background: #525457;
     color: white;
     font-size: 30px;
@@ -65,27 +74,38 @@
     cursor: pointer;
   }
 
+  .header__mobile {
+    display: flex;
+    align-items: center;
+    flex: 1;
+    justify-content: space-between;
+  }
+
   .header__mobile-menu {
     display: flex;
-    flex-direction: row;        /* one horizontal line */
+    flex: 1;
+    flex-direction: row;
     align-items: center;
-    justify-content: flex-start;
+    justify-content: center;
+    gap: 10px;
     background: #525457;
-    padding: 8px 16px;
-    gap: 16px;                  /* space between logo and links */
+    padding: 0;
+    margin: 0;
   }
 
   .header__logo--mobile {
+    display: block;
     width: 110px;
     height: auto;
+    margin-right: 8px;
   }
 
   .header__routes--mobile {
     display: flex;
-    flex-direction: row;        /* horizontal */
+    flex-direction: row;
     align-items: center;
-    gap: 12px;
-    margin: 0;                  /* no extra left margin */
+    gap: 10px;
+    margin: 0;
     padding: 0;
   }
 
@@ -97,7 +117,12 @@
 /* Small phones (<= 600px) */
 @media screen and (max-width: 600px) {
   .header {
-    display: block;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 12px;
+    padding: 0 16px;
+    min-height: 60px;
   }
 
   .header__burger {
@@ -107,6 +132,10 @@
 
   .header__logo--mobile {
     width: 95px;
+  }
+
+  .header__mobile {
+    display: flex;
   }
 
   .header__mobile-menu {
@@ -121,4 +150,5 @@
   .header__routes--mobile .header__routes_page-item-button {
     font-size: 14px;
   }
+
 }

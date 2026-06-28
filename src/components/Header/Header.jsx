@@ -38,8 +38,14 @@ function Header({ hiddenHeader, toggleHeader }) {
       </button>
 
       {!hiddenHeader && (
+        <div className='header__mobile'>
+        <img 
+            className="header__logo 
+            header__logo--mobile" 
+            src={logo} 
+            alt="MKE SKYMEDIA Logo" 
+          />
         <div className="header__mobile-menu">
-          <img className="header__logo header__logo--mobile" src={logo} alt="MKE SKYMEDIA Logo" />
           <ul className="header__routes header__routes--mobile">
             <li className="header__routes_page-item">
               <Link to="/" onClick={toggleHeader}>
@@ -57,6 +63,7 @@ function Header({ hiddenHeader, toggleHeader }) {
               </Link>
             </li>
           </ul>
+        </div>
         </div>
       )}
     </header>
