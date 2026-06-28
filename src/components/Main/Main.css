@@ -98,6 +98,9 @@
   .main__video-wrap {
     padding: 32px 16px 48px;
   }
+  .main__bottom-line {
+    height: 0;
+  }
 }
 
 @media screen and (max-width: 600px) {
@@ -111,6 +114,9 @@
 
   .main__video-wrap {
     padding: 24px 12px 32px;
+  }
+  .main__bottom-line {
+    height: 0;
   }
 }
 
