@@ -46,7 +46,8 @@ function Contact() {
             </ExternalLinks>
             <div className='contacts__social_number_email'>
               <img className="contact__social_links_image" src={email_image} alt="Email Icon" />
-              <div className='contacts__social_email'>jramos414@hotmail.com</div>
+              <div className='contacts__social_email'>
+                <a className="contacts__social_email-redirect" href="mailto:jramos414@hotmail.com">jramos414@hotmail.com</a></div>
             </div>
             <div className='contacts__social_number_email'>
               <img className="contact__social_links_image" src={phone_image} alt="Phone Icon" />

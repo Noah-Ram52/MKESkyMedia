@@ -67,6 +67,22 @@
   margin-left: 10px;
 }
 
+.contacts__social_email-redirect {
+  color: #000;
+  text-decoration: none;
+}
+
+.contacts__social_email-redirect:hover {
+  transform: scale(1.08);
+  cursor: pointer;
+}
+
+.contacts__social_email-redirect:visited {
+  color: #000;
+  transform: scale(1.08);
+  cursor: pointer;
+}
+
 .contacts__social_number_position {
   font-family: 'Open Sans', sans-serif;
   font-size: 20px;
