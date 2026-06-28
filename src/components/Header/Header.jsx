@@ -1,9 +1,8 @@
 import './Header.css'
 import { Link } from 'react-router-dom'
 import logo from '../../assets/MKE SKYMEDIA log back with text.png'
-import MKE_SkyMedia_Text from "../../assets/MKE SKYMEDIA _text_only.png"
 
-function Header({ hiddenHeader, toggleHeader }) {
+function Header({ toggleHeader }) {
   return (
     <header className="header">
       <div className="header__desktop">
