@@ -5,6 +5,7 @@
 .about__empty-space {
   background: radial-gradient(circle, #504143, #4c4b4b, #504143);
   height: 200px;
+  margin: 0;
 }
 
 .about__logo {
@@ -19,13 +20,11 @@
 }
 
 .about__empty-space-title {
-  position: relative;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  z-index: 1;
   width: 75%;
   height: auto;
-  z-index: 1;
-  bottom: 100%;
+  position: relative;
+  transform: translate(15%,-62%);
 }
 
 .about__container {
