@@ -84,8 +84,6 @@
     position: relative;
   }
 
-
-
   .about__container {
     flex-direction: column;
   }
@@ -97,6 +95,7 @@
     background-image: url('/src/assets/MKE SKYMEDIA _text_only.png');
     position: relative;
     bottom: 65px;
+    transform: translate(2%,-50%);
   }
 
   .about__text {
@@ -133,6 +132,7 @@
     width: 100%;
     background-image: url('/src/assets/MKE SKYMEDIA _text_only.png');
     bottom: 0;
+    transform: translate(3%,-55%);
   }
 
   .about__text {
