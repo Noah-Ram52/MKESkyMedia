@@ -25,19 +25,7 @@ function Header({ hiddenHeader, toggleHeader }) {
             </Link>
           </li>
         </ul>
-      </div>
-
-      <button
-        className="header__burger"
-        onClick={toggleHeader}
-        aria-label="Toggle navigation menu"
-        aria-expanded={!hiddenHeader}
-      >
-        ☰
-        
-      </button>
-
-      {!hiddenHeader && (
+      </div> 
         <div className='header__mobile'>
         <img 
             className="header__logo 
@@ -65,7 +53,7 @@ function Header({ hiddenHeader, toggleHeader }) {
           </ul>
         </div>
         </div>
-      )}
+      
     </header>
   )
 }
