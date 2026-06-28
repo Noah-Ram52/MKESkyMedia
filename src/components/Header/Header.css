@@ -45,6 +45,10 @@
   display: none;
 }
 
+.header__mobile {
+  display: none;
+}
+
 /* Mobile / tablet */
 @media screen and (max-width: 900px) {
   .header {
