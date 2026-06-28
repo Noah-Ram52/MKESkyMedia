@@ -5,7 +5,12 @@ function Main() {
   return (
     <main className="main">
       <div className="main__container-top">
-        <img className="main__image" src={city} alt="MKE SKYMEDIA Main" />
+        <img 
+        className="main__image" 
+        src={city} 
+        alt="MKE SKYMEDIA Main"
+        loading="eager"
+        fetchpriority="high" />
         <div className="main__image-overlay"></div>
         <div className="main__title main__title--top">
           <h1 className='main__title-text'>MKE SKYMEDIA</h1>

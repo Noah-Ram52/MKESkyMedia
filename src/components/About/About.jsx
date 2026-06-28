@@ -11,7 +11,9 @@ function About() {
             <img 
             className="about__empty-space-title" 
             src={MKESkyMediaTextOnly} 
-            alt="MKE Skymedia Text" />
+            alt="MKE Skymedia Text" 
+            loading="eager"
+            fetchpriority="high"/>
         </div>
       <div className="about__container">
         <div className="about__text">

@@ -61,6 +61,8 @@ function Contact() {
     className="contacts__social_image_text"
     src={MKE_SkyMedia_text}
     alt="MKE SkyMedia Text"
+    loading="eager"
+  fetchpriority="high"
   />
 </div>
       </div>
