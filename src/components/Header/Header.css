@@ -152,6 +152,8 @@
 
   .header__routes--mobile {
     gap: 8px;
+    position: relative;
+    right: 14px;
   }
 
   .header__routes--mobile .header__routes_page-item-button {
